@@ -104,8 +104,8 @@
   }
 
   .btn-att{
-    margin: 20px 0 20px 0;
-    width: 350px;
+    margin: 20px auto;
+    width: 320px;
     border-radius: 5px;
     outline: none;
     border: none;
