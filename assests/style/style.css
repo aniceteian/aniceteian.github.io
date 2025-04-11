@@ -84,14 +84,15 @@
 
   .box-1 .brand-title{
     margin-left: 12px;
-    margin-top: 12px;
-    font-size: 20px;
+    margin-top: 5px;
+    font-size: 25px;
     font-family: 'Calibri', 'Trebuchet MS', sans-serif;
-    color: #58aafc;
+    color: #003366;
     font-weight: bold;
   }
 
   .login-title{
+    margin-top: 20px;
     font-size: 40px;
     line-height: 50px;
     color: white;
