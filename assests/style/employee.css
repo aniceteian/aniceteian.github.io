@@ -66,6 +66,7 @@ body{
     font-family: 'Calibri', 'Trebuchet MS', sans-serif;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    background-color: white;
 }
 
 header{
@@ -81,7 +82,6 @@ header{
 header img{
     width: 68px;
     display: inline;
-    
 }
 
 .brand-title{
@@ -106,8 +106,8 @@ section{
 }
 
 section:hover{
+  
   hr{margin: 0 1px 15px;
-    
   }
 }
 
