@@ -67,7 +67,7 @@ body{
     font-family: 'Calibri', 'Trebuchet MS', sans-serif;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(250, 250, 250);
 }
 
 header{
