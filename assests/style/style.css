@@ -1,0 +1,173 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  /* 3. Enable keyword animations */
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      interpolate-size: allow-keywords;
+    }
+  }
+  
+  body {
+    /* 4. Add accessible line-height */
+    line-height: 1.5;
+    /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 6. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 7. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 8. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 9. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    10. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  body{
+    background-color: rgb(220, 220, 220);
+  }
+
+  .main{
+    margin: 200px auto;
+    width: 55%;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  .box-1{
+    width: 50%;
+    height: auto;
+    background-image: url(/assests/img/graphic-2d-colorful-wallpaper-with-grainy-gradients.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 80px 60px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  figure{
+    display: flex;
+  }
+
+  .box-1 .brand-title{
+    margin-left: 12px;
+    margin-top: 12px;
+    font-size: 20px;
+    font-family: 'Calibri', 'Trebuchet MS', sans-serif;
+    color: #58aafc;
+    font-weight: bold;
+  }
+
+  .login-title{
+    font-size: 40px;
+    line-height: 50px;
+    color: white;
+  }
+
+  .btn-att{
+    margin: 20px 0 20px;
+    width: 400px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    text-align: left;
+    font-size: 14px;
+    padding: 5px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: 0.1s;
+    cursor: pointer;
+  }
+
+  .btn-att:hover{
+    background-color: #003366;
+
+  }
+
+  .box-1 p{
+    font-size: 13px;
+    color: white;
+  }
+
+  .box-2{
+    width: 50%;
+    text-align: center;
+    padding: 150px 50px;
+    
+  }
+
+  .box-2:hover{
+    hr{
+      border: 1px solid #003366;
+      opacity: 1;
+      margin: 20px auto;
+      width: 100%;
+    }
+
+  }
+
+  .brand-title2{
+    color: #003366;
+  }
+
+  hr{
+    margin: 20px auto;
+    opacity: 0.3;
+    transition: 0.5s;
+    width: 30%;
+    
+  }
+
+  .box-2 p{
+    margin-bottom: 30px;
+  }
+
+  .button{
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    color: #1a73e8;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+  }
+
+  .button:hover{
+    color: white;
+    background-color: #1a73e8;
+  }
+

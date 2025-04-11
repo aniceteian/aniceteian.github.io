@@ -1,0 +1,186 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  /* 3. Enable keyword animations */
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      interpolate-size: allow-keywords;
+    }
+  }
+  
+  body {
+    /* 4. Add accessible line-height */
+    line-height: 1.5;
+    /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 6. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 7. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 8. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 9. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    10. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.main{
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 25%;
+    font-family: 'Calibri', 'Trebuchet MS', sans-serif;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+header{
+    width: 100%;
+    padding: 25px;
+    background-image: url(/assests/img/graphic-2d-colorful-wallpaper-with-grainy-gradients.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+header img{
+    width: 68px;
+    display: inline;
+    
+}
+
+.brand-title{
+    display: inline-block;
+    padding-left: 15px;
+    color: white;
+    line-height: 30px;
+    color: #003366;
+    
+}
+
+.brand-title p{
+    font-size: 15px;
+    
+}
+
+section{
+    width: 100%;
+    text-align: center;
+    padding: 5px 50px;
+    
+}
+
+section:hover{
+  hr{margin: 0 1px 15px;
+    
+  }
+}
+
+.admin-title{
+    padding: 15px;
+    color: #003366;
+}
+
+hr{
+  margin: 0 150px 15px;
+  padding: 0.5px 0;
+  background-color: #003366;
+  transition: 0.5s;
+}
+
+section p{
+    text-align: left;
+    padding: 5px 0;
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0.2);
+    padding: 0 20px;
+    font-size: 15px;
+}
+
+input:focus{
+    padding: 0 20px;
+    outline-color: #003366;
+}
+
+
+.button{
+    display: block;
+    width: 100%;
+    background-color: #003366;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: 0.2s;
+}
+
+.button:hover{
+  background-color: white;
+  border: 1px solid #003366;
+  color: #003366;
+  
+}
+
+.foot{
+  display: flex;
+  margin-left: 50px;
+}
+
+.foot img{
+  margin-top: 6px;
+}
+
+.footer{
+    margin-left: 10px;
+    text-align: center;
+    display: inline;
+}
+
+
+.footer a{
+    
+    font-weight: bold;
+    color: black;
+}
